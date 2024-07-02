@@ -1,19 +1,59 @@
+/* Layout */
+
 body {
 	background-color: #4A5D23;
 	color: #ffffff;
 	display: block;
 	font-family: 'Trebuchet MS', sans-serif;
 	margin: 0;
-	padding: 10px;
+	padding: 0;
 	width: 100%;
 }
 
+section{
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 10px;
+	position: relative;
+	z-index: 1;
+}
+
 h1{
-	font-size: 16px;
+	font-size: 20px;
 }
 
 p{
-	font-size: 10px;
+	font-size: 16px;
+	line-height: 155%;
+}
+
+input[type='checkbox'] {
+	display: none;
+}
+
+input:checked + label + article { 
+	display: none; 
+}
+
+input:not(:checked) + label + article + article { 
+	display: none; 
+}
+
+input:checked + label + article + article {
+	display: block;
+}
+
+input + label:after {
+	content: "en";
+}
+
+input:checked + label:after {
+	content: "es";
+}
+
+label {
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .grain{
@@ -30,6 +70,7 @@ p{
   position: fixed;
   top: -110%;
   width: 300%;
+  z-index: 0;
 }
 
 @keyframes grain {
@@ -43,4 +84,14 @@ p{
   70% { transform:translate(0%, 15%) }
   80% { transform:translate(3%, 35%) }
   90% { transform:translate(-10%, 10%) }
+}
+
+@media screen and (max-width: 500px) {
+  h1{
+		font-size: 16px;
+	}
+
+	p{
+		font-size: 12px;
+	}
 }
