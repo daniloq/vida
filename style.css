@@ -1,30 +1,44 @@
-/* Layout */
+*{
+  box-sizing: border-box;
+  outline: none;
+  -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
 
 body {
-	background-color: #4A5D23;
+	background-color: #023020;
 	color: #ffffff;
 	display: block;
-	font-family: 'Trebuchet MS', sans-serif;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	line-height: 155%;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	width: 100%;
 }
 
-section{
-	max-width: 500px;
+section, footer{
 	margin: 0 auto;
-	padding: 10px;
+	max-width: 500px;
 	position: relative;
 	z-index: 1;
 }
 
 h1{
-	font-size: 20px;
+	font-size: 22px;
+	overflow: hidden;
 }
 
-p{
-	font-size: 16px;
-	line-height: 155%;
+h1::before {
+	background-color: transparent;
+	clip: rect(10px, 377px, 87px, 0px);
+	color: #fff;
+  content: attr(data-text);
+  left: 2px;
+  overflow: hidden;
+  position: absolute;
+	top: 7px;
+  width: 400px;
 }
 
 input[type='checkbox'] {
@@ -52,25 +66,30 @@ input:checked + label:after {
 }
 
 label {
-    font-size: 16px;
-    cursor: pointer;
+	cursor: pointer;
+	float: right;
+  font-size: 16px;
 }
 
-.grain{
+aside{
   height: 100%;
 }
 
-.grain:after {
+aside:after {
   animation: grain 8s steps(10) infinite;
   background-image: url(imgs/pattern.png);
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.3;
+  opacity: 0.35;
   position: fixed;
   top: -110%;
   width: 300%;
   z-index: 0;
+}
+
+footer {
+	color: black;
 }
 
 @keyframes grain {
