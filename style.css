@@ -29,16 +29,8 @@ h1{
 	overflow: hidden;
 }
 
-h1::before {
-	background-color: transparent;
-	clip: rect(10px, 377px, 87px, 0px);
-	color: #fff;
-  content: attr(data-text);
-  left: 2px;
-  overflow: hidden;
-  position: absolute;
-	top: 7px;
-  width: 400px;
+P{
+	font-style: italic;
 }
 
 input[type='checkbox'] {
@@ -58,11 +50,11 @@ input:checked + label + article + article {
 }
 
 input + label:after {
-	content: "en";
+	content: "EN";
 }
 
 input:checked + label:after {
-	content: "es";
+	content: "ES";
 }
 
 label {
@@ -103,14 +95,4 @@ footer {
   70% { transform:translate(0%, 15%) }
   80% { transform:translate(3%, 35%) }
   90% { transform:translate(-10%, 10%) }
-}
-
-@media screen and (max-width: 500px) {
-  h1{
-		font-size: 16px;
-	}
-
-	p{
-		font-size: 12px;
-	}
 }
