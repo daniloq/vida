@@ -63,6 +63,9 @@ label {
 	cursor: pointer;
 	float: right;
   font-size: 16px;
+  margin: 0 auto;
+  position: relative;
+  top: 1px;
 }
 
 aside{
