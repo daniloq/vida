@@ -20,6 +20,16 @@ body {
 	width: 100%;
 }
 
+a, a:visited{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a:hover{
+	color:rgba(255,255,255,0.7);
+	cursor: pointer;
+}
+
 section, footer{
 	margin: 0 auto;
 	max-width: 500px;
@@ -84,6 +94,10 @@ aside:after {
   top: -110%;
   width: 300%;
   z-index: 0;
+}
+
+.seed img {
+	width: 100%;
 }
 
 @keyframes grain {
