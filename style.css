@@ -100,6 +100,18 @@ aside:after {
 	width: 100%;
 }
 
+.seeds{
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+}
+
+.seeds .seed{
+	flex: 1;
+	padding: 10px 10px 0 10px;
+	width: 32%;
+}
+
 @keyframes grain {
   0%, 100% { transform:translate(0, 0) }
   10% { transform:translate(-5%, -10%) }
@@ -111,4 +123,16 @@ aside:after {
   70% { transform:translate(0%, 15%) }
   80% { transform:translate(3%, 35%) }
   90% { transform:translate(-10%, 10%) }
+}
+
+@media (max-width: 500px) {
+  
+  .seeds {
+    display: block;
+  }
+
+  .seeds .seed{
+  	width: 100%;
+  }
+
 }
