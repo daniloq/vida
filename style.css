@@ -20,6 +20,10 @@ body {
 	width: 100%;
 }
 
+body.case-study {
+	font-family: Arial, sans-serif;
+}
+
 a, a:visited{
 	color: #ffffff;
 	text-decoration: underline;
