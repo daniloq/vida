@@ -17,8 +17,19 @@ body {
   padding: min(5vw, 2rem);
 }
 
+h5{
+	margin-bottom: -15px;
+}
+
+span{
+	display: block;
+  margin-top: -20px;
+  color: #666;
+}
+
 blockquote {
 	border-left: 1px solid #000;
+	font-size: clamp(1.5rem, 1.5vw, 1.7rem);
 	font-style: italic;
 	padding-left: 10px;
 }
@@ -42,7 +53,22 @@ img {
 	width: 100%;
 }
 
+.image--big{
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+.image--caption{
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px 0 30px 0;
+	color: #666;
+}
+
 section, footer{
+	display: block;
 	margin: 0 auto;
 	max-width: 600px;
 	position: relative;
