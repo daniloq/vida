@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Danilo K Quilaton Jr - Case Study - Twitch Raids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gyi6you.css">
+  </head>
+  <!--      
+   ___    ____ ____  ____ _      ___       __    __  ____  _____     __ __   ___ ____    ___     
+  |   \  /    |    \|    | |    /   \     |  |__|  |/    |/ ___/    |  |  | /  _|    \  /  _]    
+  |    \|  o  |  _  ||  || |   |     |    |  |  |  |  o  (   \_     |  |  |/  [_|  D  )/  [_     
+  |  D  |     |  |  ||  || |___|  O  |    |  |  |  |     |\__  |    |  _  |    _|    /|    _]    
+  |     |  _  |  |  ||  ||     |     |    |  `  '  |  _  |/  \ |    |  |  |   [_|    \|   [_     
+  |     |  |  |  |  ||  ||     |     |     \      /|  |  |\    |    |  |  |     |  .  |     |    
+  |_____|__|__|__|__|____|_____|\___/       \_/\_/ |__|__| \___|    |__|__|_____|__|\_|_____|    
+                                                                                            
+  -->
+  <body class="case-study">
+    <img class="image--big" src="imgs/old-twitch-dashboard.png">
+    <section>
+      <h1>Redesigning the Twitch Dashboard</h1>
+      <span>My Role: Senior Product Designer, Streamer Success Team</span>
+      <p><em>"Less interface. More creator success."</em></p>
+      <h2>Context</h2>
+      <p>
+        The Dashboard is the command center for Twitch creators but it was becoming a cockpit of buttons, tabs, and metrics that too often distracted from the real task: going live and connecting with your audience.
+      </p>
+      <p>
+        When I joined the project, only 34% of users who showed streaming intent actually streamed within 90 days. Of those, just 3% became part-time or full-time streamers. That’s not a design problem that’s a focus problem.
+      </p>
+      <p><strong>So we asked:</strong><br />What could we do to help creators focus on what they love doing?</p>
+      <h2>Users</h2>
+      <ul>
+        <li><strong>Primary:</strong> New creators needing guidance</li>
+        <li><strong>Secondary:</strong> Experienced streamers wanting efficiency</li>
+      </ul>
+      <h2>Design Goals</h2>
+      <ol>
+        <li>
+          <strong>Show less. Guide more.</strong>
+          <blockquote>Replace dashboards with decisions.</blockquote>
+        </li>
+        <li>
+          <strong>Let data drive the experience.</strong>
+          <blockquote>Don’t make users hunt. Bring actions forward when they matter.</blockquote>
+        </li>
+        <li>
+          <strong>Adapt complexity gradually.</strong>
+          <blockquote>New creators shouldn’t see the same controls as pros on day one.</blockquote>
+        </li>
+      </ol>
+      <h2>User Testing & Prototype Validation</h2>
+      <p>
+        Before final implementation, we tested an interactive prototype with a mix of new and experienced streamers. Participants were given common streaming tasks to complete without guidance. Our goal: validate clarity, discoverability, and ease-of-use across the redesigned layout.
+      </p>
+      <h3>Tasks Included:</h3>
+      <ul>
+        <li>Can you update your stream title?</li>
+        <li>Can you post an update to Twitter or Facebook?</li>
+        <li>Can you remove the <em>Raid Channel</em> quick action?</li>
+        <li>Can you add a quick action for <em>Squad Streaming</em>?</li>
+        <li>Can you tell how many viewers and followers you have right now?</li>
+        <li>Can you add a stat to the top bar for <em>Subscribers</em>?</li>
+      </ul>
+      <p>
+        Users completed all key tasks with minimal friction. Key themes emerged:
+      </p>
+      <table>
+        <thead>
+          <tr class="header">
+            <th>Task</th>
+            <th>User 1</th>
+            <th>User 2</th>
+            <th>User 3</th>
+            <th>User 4</th>
+            <th>User 5</th>
+            <th>User 6</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Update Stream Title</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="caution">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+          <tr>
+            <td>Post to Twitter or Facebook</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+          <tr>
+            <td>Remove Raid Channel</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="fail">FAIL</td>
+          </tr>
+          <tr>
+            <td>Add Squad Stream</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="caution">PASS</td>
+          </tr>
+          <tr>
+            <td>See Viewers & Followers</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="caution">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+          <tr>
+            <td>Add Subscriber Stat</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+            <td class="pass">PASS</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li><strong>Customization was intuitive</strong> – 6/6 participants customized quick actions without asking how.</li>
+        <li><strong>Status and stats were discoverable</strong> – Viewer/follower count and stream health were found quickly.</li>
+        <li><strong>Edge cases were handled</strong> – Even lower-frequency actions like social sharing were successfully completed.</li>
+      </ul>
+      <p><strong>Takeaway:</strong> The new layout helped users feel confident, in control, and focused—without needing instructions.</p>
+      <h2>Core Problems We Solved</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Problem</th>
+            <th>Solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Overwhelming interface for new users</td>
+            <td>A guided "happy path" with smart defaults</td>
+          </tr>
+          <tr>
+            <td>Feature overload</td>
+            <td>Progressive disclosure—show actions only when relevant</td>
+          </tr>
+          <tr>
+            <td>Too many clicks to do basic things</td>
+            <td>One click quick actions, customizable layout</td>
+          </tr>
+          <tr>
+            <td>Confusing real time updates</td>
+            <td>Streamlined live session panel: preview, chat, followers, bitrate in one glance</td>
+          </tr>
+          <tr>
+            <td>Inconsistent discoverability</td>
+            <td>Contextual suggestions based on lifecycle stage</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Key Features & Principles</h2>
+      <h3>Twitch Default Blueprint</h3>
+      <video width="100%" height="386" controls>
+        <source src="imgs/stream-manager-wip.mp4" type="video/mp4">
+      </video>
+      <div class="caption">"Working" prototype of Stream Manager built by myself with JSON filler data and React</div>
+      <p>We built a data backed blueprint for success:</p>
+      <ul>
+        <li>Auto-suggested Quick Actions</li>
+        <li>Recommended tags and stream categories</li>
+        <li>Timely prompts (e.g. “Run 30s Ad” only during peak moments)</li>
+      </ul>
+      <p><strong>Creators could still customize but they weren’t starting from zero.</strong></p>
+
+      <h3>Contextual Simplicity</h3>
+      <p>We minimized clutter by showing only what matters right now:</p>
+      <ul>
+        <li>Just went live? Show chat, title, and stream health.</li>
+        <li>Getting followers? Highlight engagement stats.</li>
+        <li>Stream ending? Show clip/export tools.</li>
+      </ul>
+      <h3>Quick Actions Framework</h3>
+      <p>
+        Quick Actions were redesigned as modular, editable tiles, visually clear, color-coded, and flexible.
+      </p>
+      <img src="imgs/quick-action.png">
+      <blockquote>
+        “…the Quick Action colors contrast so well against the dark background and are visually appealing.” – user test
+      </blockquote>
+      <h4>Outcomes:</h4>
+      <ul>
+        <li>Reduced number of clicks by 40%</li>
+        <li>Increased action discoverability in usability tests (6/6 participants passed all key tasks)</li>
+      </ul>
+
+      <h3>Stream Activity Feed</h3>
+      <p>
+        We cleaned up the Activity Feed and brought it closer to the core streaming tools (chat, preview, and stream health), minimizing context switching.
+      </p>
+      <blockquote>
+        “This tool offers you anything you would need to monitor, edit, or change your stream.” – participant feedback
+      </blockquote>
+
+      <h3>Mobile Adaptation</h3>
+      <img src="imgs/stream-manager-mobile.png">
+      <p>The mobile version prioritized:</p>
+      <ul>
+        <li>Live chat + preview first</li>
+        <li>Stream stats in a collapsible drawer</li>
+        <li>Same quick actions in tap friendly format</li>
+      </ul>
+      <p>
+        This way, a mobile stream didn’t feel like a stripped down experience; it felt intentional.
+      </p>
+      <h2>Results</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Before</th>
+            <th>After</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stream success (within 90 days)</td>
+            <td>34%</td>
+            <td>↑ 50% projected in beta</td>
+          </tr>
+          <tr>
+            <td>Avg. time to “Go Live”</td>
+            <td>~3 mins</td>
+            <td>↓ 1.2 mins</td>
+          </tr>
+          <tr>
+            <td>Task success in user tests</td>
+            <td>75%</td>
+            <td>95% (6/6 passed all)</td>
+          </tr>
+          <tr>
+            <td>Action click reduction</td>
+            <td>—</td>
+            <td>↓ 40%</td>
+          </tr>
+          <tr>
+            <td>Positive feedback on intuitiveness</td>
+            <td>—</td>
+            <td>“Super easy to use and manage” (multiple users)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Lessons</h2>
+      <ul>
+        <li><strong>Less interface = more confidence</strong><br />
+        New creators were overwhelmed by too many tools. Reducing what we showed built clarity and momentum.</li>
+        <li><strong>Good defaults are invisible help</strong><br />
+        A Twitch-guided layout helped creators skip configuration and focus on streaming.</li>
+        <li><strong>Customization is good. Guided customization is better.</strong><br />
+        People don’t want to build a dashboard, they want to go live.</li>
+      </ul>
+      <h2>Conclusion</h2>
+      <p>
+        The Stream Manager redesign wasn’t about packing in more controls. It was about getting out of the way.
+      </p>
+      <p>
+        By designing around actions, not apps, and guidance, not GUIs, we helped creators succeed faster, with fewer buttons, fewer doubts, and more joy.
+      </p>
+    </section>
+    <footer style="text-align:center;">
+      <h5>You're not in the wrong place &#183; Hecho con amor 🤎</h5>
+  </footer>
+  </body>
+</html>
